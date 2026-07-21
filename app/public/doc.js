@@ -30,6 +30,7 @@ async function LoadDoc(){
     data.forEach(item => {
       container.innerHTML += comp(item.title, item.method, item.url, item.response);
     });
+    console.log("data load")
 
   } catch(err) {
     console.error("Doc load error:", err);
