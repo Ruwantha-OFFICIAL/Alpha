@@ -38,7 +38,7 @@ module.exports = {
       return {
         name,
         version: other.vestion,
-        image: other.icon,
+        image: "https://f-droid.org"+other.icon,
         download: other.downlod
       }
     }))
