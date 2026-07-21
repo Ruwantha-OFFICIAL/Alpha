@@ -1,0 +1,65 @@
+<section>
+    <style>
+        .footer {
+            background-color: var(--secondary);
+            text-align: center;
+            margin-top: 70px;
+            padding: 25px 20px;
+            color: color-mix(in srgb, var(--primary) 20%, #ffffff 80%);
+        }
+
+        .foot-text {
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        
+        .foot-icons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .foot-icon4 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .code {
+            background-image: url("/image/code-slash.svg");
+        }
+        .wa {
+            background-image: url("/image/whatsapp.svg");
+        }
+        .git{
+          background-image: url("/image/github.svg");
+        }
+        @media (min-width: 720px) {
+            .foot-text {
+                font-weight: 400;
+            }
+        }
+    </style>
+    
+    <div class="footer">
+        <div class="foot-text text-sm">
+            ©Copyright 2026 Alpha,
+            <br />
+            Alpha by lasith ruwantha
+        </div>
+        <div class="foot-icons-container">
+          <a href="https://github.com/Ruwantha-OFFICIAL/Alpha">
+              <i class="foot-icon4 code"></i>
+          </a>
+          <a href="https://whatsapp.com/channel/0029VaxogApBKfi81YbOFz1U">
+              <i class="foot-icon4 wa"></i>
+          </a>
+          <a href="https://github.com/Ruwantha-OFFICIAL/">
+              <i class="foot-icon4 git"></i>
+          </a>
+        </div>
+    </div>
+</section>

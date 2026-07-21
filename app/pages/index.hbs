@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--express static power not ../-->
+  <link rel="stylesheet" href="./css/root.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./main.js"></script>
+  <title>Alpha Website</title>
+</head>
+
+<body>
+  {{> navbar}}
+  <!--hero-->
+  <section>
+    <div id="hero">
+      <div class="container">
+        <div>
+          <h1 class="text-lg">
+            Open Source Api With <span>Alpha</span> Website
+          </h1>
+          <p>free open source public api provid</p>
+        </div>
+        <div>
+          <a href="github.com" class="btn round-sm">Get Free Source →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About-->
+  <section>
+    <div id="About">
+      <div>
+        <div class="about-head text-md">
+          <h3>About <span>As</span></h3>
+        </div>
+        <div class="flex-row w-full">
+          <div class="w-full md:w-50">
+            <img src="./image/computer.jpg" height="" width="80%" />
+          </div>
+          <div class="w-full md:w-50">
+            <h4 class="text-sm2">Why Use Api & Scarps ?</h4>
+            <p class="text-sm">
+              We use APIs and Web Scraping to get data quickly
+              without building everything from scratch. With a
+              free public API, developers can access real-time
+              data like weather, news, or products and add it
+              directly to their website or app. It saves time,
+              money, and makes development much faster.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cards-->
+  <section>
+    <div class="w-full cards">
+      {{> card icon ="♾️" titel="Unlimited Usage" des="No rate limit, No login needed"}}
+      {{> card icon ="🗂" titel="Open Source" des="Open Source Projects. Fully customizable with MIT license"}}
+      {{> card icon ="👥" titel="Customizable & Easy to Understand" des="You own it. Customize & host it yourself"}}
+      {{> card icon ="📚" titel="Easily Scalable" des="Easy to customize & scale project"}}
+    </div>
+  </section>
+  <!--provide apis-->
+  <section>
+    <div class="provid">
+      <div class="provid-head text-md">
+        <h3>
+           Api <span>Service</span>
+        </h3>
+      </div>
+      <div class="provid-cards">
+        {{> providCard icon="/image/android.svg" text="Apk"}}
+        {{> providCard icon="/image/film.svg" text="Movie"}}
+        {{> providCard icon="/image/newspaper.svg" text="News"}}
+      </div>
+      <div class="more-info">
+        <p class="text-sm" style="font-weight: 380;">
+          You need get more information go to
+          <a href="github">github</a> or <a href="doc">docs</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  {{>footer}}
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<div class="card">
+    <div class="icon-box">
+        <div>
+            {{{icon}}}
+        </div>
+    </div>
+    <div class="icon-content card-text">
+        <h4>{{{titel}}}</h4>
+        <p>{{{des}}}</p>
+    </div>
+</div>
+<style>
+    .card {
+        width: 100%;
+        padding: 24px 20px;
+        background: linear-gradient(180deg, var(--secondary) 0%, #111827 100%);
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid rgba(56, 207, 231, 0.15);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        border-color: var(--primary);
+        box-shadow:
+            0 0 25px rgba(56, 207, 231, 0.25),
+            0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon-box {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+
+    .icon-box div {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        padding: 14px;
+        border-radius: 16px;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 18px rgba(56, 207, 231, 0.4);
+    }
+
+    .card-text h4 {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0 0 6px 0;
+    }
+
+    .card-text p {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+            circle,
+            rgba(56, 207, 231, 0.08) 0%,
+            transparent 60%
+        );
+        z-index: -1;
+    }
+</style>

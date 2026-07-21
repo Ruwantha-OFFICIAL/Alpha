@@ -1,0 +1,74 @@
+:root {
+    --primary: #38cfe7;
+    --secondary: #1e293b; /* fix */
+    --accent: #5038e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, "Open Sans";
+    overflow-x: hidden;
+    color: #0c0c0c;
+    background: linear-gradient(180deg, var(--primary) 0%, #e0f7ff 100%);
+    background-repeat: no-repeat;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+}
+.text-sm2 {
+    font-size: 1.2rem;
+}
+.text-md {
+    font-size: 1.5rem;
+}
+.text-md2{
+  font-size: 1.8rem;
+}
+.text-lg {
+    font-size: 2.4rem;
+}
+
+.btn {
+    padding: 16px 80px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: var(--secondary);
+    scale: 0.9;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.w-full {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+a{
+  color: var(--accent);
+}
+
+@media (min-width: 720px) {
+    .flex-row {
+        flex-direction: row;
+    }
+    .md\:w-50{
+      width: 50%;
+    }
+}

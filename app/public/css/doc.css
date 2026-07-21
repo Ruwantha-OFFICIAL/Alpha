@@ -1,0 +1,160 @@
+/* TOPIC - EXACTLY YOUR CODE. NO CHANGE */
+.topic{
+  display: flex;
+  justify-content: center;
+  margin: 50px 10px;
+}
+.topic h3{
+  display: inline-block;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.topic span{
+  color: var(--accent);
+}
+.topic h3:hover{
+  transform: translateY(-8px) scale(1.1);
+}
+.topic h3::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  border-radius: 3px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  transition: width 0.8s ease-in-out;
+}
+.topic h3:hover::after{
+  width: 100%;
+}
+/*=================Mini Text/=============*/
+.mini-text{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.mini-text div{
+  width: 350px;
+}
+/* ========== DOC-BOX========== */
+.doc-box{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 25px auto;
+  background: #ffffff;
+  border: 1px solid rgba(56, 207, 231, 0.25);
+  padding: 28px;
+  border-radius: 18px;
+  color: #1e293b;
+  box-shadow: 0 10px 40px rgba(80, 56, 231, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.doc-box:hover{
+  transform: translateY(-5px);
+  border: 1px solid var(--accent);
+  box-shadow: 0 15px 50px rgba(80, 56, 231, 0.2);
+}
+
+.doc-head{
+  text-align: center;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.doc-head .text-md{
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.doc-content label{
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.doc-content .code-wrapper{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.doc-content code{
+  display: block;
+  background: #0f172a;
+  padding: 14px 55px 14px 18px;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  color: var(--primary);
+  overflow-x: auto;
+}
+
+.copy-btn{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 6px 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.copy-btn:hover{
+  background: var(--primary);
+  color: #0b1120;
+}
+
+.doc-content .method-badge{
+  display: inline-block;
+  background: var(--primary);
+  color: #0b1120;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.doc-content p{
+  color: #475569;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.doc-content pre{
+  background: #0f172a;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  color: #e0f7ff;
+}
+
+@media(min-width: 720px){
+  .doc-box{
+    width: 70%;
+    max-width: 800px;
+  }
+}
