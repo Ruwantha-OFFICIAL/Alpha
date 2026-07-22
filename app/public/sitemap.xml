@@ -7,10 +7,4 @@
        <changefreq>daily</changefreq>
        <priority>1.0000</priority>
   </url>
-  <url>
-       <loc>https://alpha-api-web.vercel.app/doc</loc>
-       <lastmod>2026-07-21T07:00:04+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
 </urlset>
