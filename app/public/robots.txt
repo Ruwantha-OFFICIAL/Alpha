@@ -3,4 +3,4 @@ Disallow: /api
 Allow: /
 Allow: /doc
 
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://alpha-api-web.vercel.app/sitemap.xml
