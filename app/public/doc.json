@@ -2,7 +2,7 @@
     {
         "title": "Application Download API",
         "method": "GET",
-        "url": "https://alpha.vercel.app/api/froid?search=termux",
+        "url": "https://alpha-api-web.vercel.app/api/froid?search=termux",
         "response": [
             {
                 "name": "Termux:Styling",
@@ -33,7 +33,7 @@
     {
         "title": "Dherana News Api",
         "method": "GET",
-        "url": "https://alpha.vercel.app/api/dhrean",
+        "url": "https://alpha-api-web.vercel.app/api/dhrean",
         "response": [
             {
                 "titel": "IRGC තර්ජනයක් ලෙස නම් කිරීම ගැන විමසීමට ඉරානය එරට සිටින බ්‍රිතාන්‍ය තානාපති කැඳවයි",
@@ -55,7 +55,7 @@
     {
         "title": "Cinesub Movie Download",
         "method": "GET",
-        "url": "https://alpha.vercel.app/api/cinesub?download=https://cinesubz.net/movies/the-legend-of-maula-jatt-2022-sinhala-subtitles/",
+        "url": "https://alpha-api-web.vercel.app/api/cinesub?download=https://cinesubz.net/movies/the-legend-of-maula-jatt-2022-sinhala-subtitles/",
         "response": {
             "title": "The Legend of Maula Jatt (2022) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ",
             "rating": "4.5",
@@ -72,7 +72,7 @@
     {
         "title": "Cinesub Movie Search",
         "method": "GET",
-        "url": "https://alpha.vercel.app/api/cinesub?search=2026",
+        "url": "https://alpha-api-web.vercel.app/api/cinesub?search=2026",
         "response": [
             {
                 "titel": "Kill Trip (2026) Sinhala Subtitles | සිංහල උපසිරැසි සමඟ",
