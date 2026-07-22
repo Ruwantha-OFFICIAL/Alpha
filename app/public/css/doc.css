@@ -2,7 +2,8 @@
 .topic{
   display: flex;
   justify-content: center;
-  margin: 50px 10px;
+  height: 40vh;
+  align-items: end;
 }
 .topic h3{
   display: inline-block;
